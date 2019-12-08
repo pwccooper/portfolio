@@ -271,7 +271,7 @@ section#intro{
 
 position: initial;
 display: flex;
-
+top: -10px;
 }
 
 section#contact{
