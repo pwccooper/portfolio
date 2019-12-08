@@ -1,0 +1,107 @@
+html{
+    overflow: hidden;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    line-height:1.6;
+    height:100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
+.navbar{
+    background-color: rgba(146, 142, 57, 0.699);
+}
+
+.nav-item{
+    float: left;
+    width: 30%;
+}
+
+li a:hover {
+    background-color: rgba(114, 6, 6, 0.692);
+  }
+
+.display-4{
+    font-family: 'Raleway', sans-serif;
+    color: #cc0000;
+    text-shadow: .5px .5px black;
+}
+
+.lead{
+    font-family: 'Roboto Slab', serif;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+section h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+section p{
+text-align: center;
+font-size: 1.5rem;
+}
+
+.parallax-wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+.parallax-wrapper::before{
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image:url("");
+    position: absolute;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2) ;
+}
+
+.regular-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image:url("https://cdn.dribbble.com/users/463836/screenshots/1876492/attachments/344598/Mountain_1242x2208_IOS6_png.png");
+    z-index: 2;
+    position: relative;
+}
+
+.content{
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+    background:black;
+
+}
+
+section#home{
+   
+}
+
+section#about{
+   
+}
+
+section#projects{
+   
+}
+
+section#contact{
+   
+}
