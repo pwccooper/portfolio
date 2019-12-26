@@ -541,6 +541,8 @@ transform: translateY(-90px);
 }
 
 section#projects h2{
+    position: relative;
+    left: 10px;
     color: rgba(185, 97, 236, 0.473);
     text-decoration: underline;
     text-shadow: 2px 2px rgb(7, 6, 8);
