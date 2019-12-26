@@ -46,6 +46,12 @@ table
 
 }
 
+h4{
+    color: rgb(136, 133, 133);
+    font-size: 14px;
+    font-style: italic;
+    text-shadow: rgba(0, 0, 0, 0.3);
+}
 
 h5{
     display: flex;
@@ -53,7 +59,7 @@ h5{
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
-    color:  rgb(131, 118, 118);
+    color: #0CE890;
     text-emphasis: bolder;
     font-size: 20px;
     text-shadow: 1px 1px rgb(0, 0, 0) ;
@@ -373,7 +379,7 @@ i{
     transform: translate(-50%, -50%);
     background-color: black;
     border-radius: 100%;
-    transition: 1.7s cubic-bezier(0,1.71,.05,1.7);
+    transition: 1.7s cubic-bezier(0,.75,.59,1.17);
 
 }
 
