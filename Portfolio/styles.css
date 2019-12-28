@@ -209,8 +209,7 @@ h5{
     width: 700px;
     position: relative;
     display: flex;
-    justify-items: space-evenly; 
-    align-items: center;
+    justify-content: initial;
 
     
 }
@@ -218,6 +217,9 @@ h5{
 .container .card{
     background: rgba(0, 0, 0, 0);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     border: rgba(0, 0, 0, 0);
 }
@@ -243,6 +245,10 @@ h5{
 
 .container .card:hover .face.face1
 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #0DFFB2;
     text-shadow: 1px 1px black;
     transform: translateY(0px);
@@ -314,6 +320,7 @@ h5{
 {
     margin: 0;
     padding: 0;
+    justify-content: space-evenly;
 }
 
 .container .card  a
@@ -351,6 +358,117 @@ h5{
   
     outline: 1px solid  rgba(0, 0, 0, 0.3);
   }
+
+
+.status{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    top: -80px;
+    width: 500px;
+    left: 100px;
+} 
+
+.status .skills{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.status .skills::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: 255, 255, 255, .1;
+    z-index: 10;
+
+}
+
+.status .skills .Name{
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+
+.status .skills .Value{
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color: #fff;
+    margin-top: -2px;
+    
+}
+
+.status .skills .percent{
+ position: relative;
+ width: calc(100% - 150px);
+ height: 20px;
+ margin: 0 10px;
+ border-radius: 10px;
+ background: #3f3f3fef;
+ box-shadow: inset 0 0 10px #000;
+ overflow: hidden;   
+}
+
+.status .skills .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 3s ease-in-out forwards;
+}
+
+@keyframes animate
+{
+    from
+    {
+        width: 0;
+    }
+}
+
+.status .skills:nth-child(2) .percent .progress{
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    
+
+}
+
+.status .skills:nth-child(3) .percent .progress{
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+.status .skills:nth-child(4) .percent .progress{
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.status .skills:nth-child(5) .percent .progress{
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.status .skills:nth-child(6) .percent .progress{
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+.status .skills:nth-child(7) .percent .progress{
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    
+}
 
 .button{
     margin-left: 15px;
@@ -552,11 +670,10 @@ top: 0;
 margin: 0;
 padding: 0;
 bottom: 0;
-left: 5px;
 position: relative;
 display: flex;
-justify-content: space-evenly;
-transform: translateY(-90px);
+
+transform: translateY(-100px);
 
 }
 
@@ -568,12 +685,20 @@ section#projects h2{
     text-shadow: 2px 2px rgb(7, 6, 8);
 }
 
-section#skills{
+section#skill{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 100vh;
     background: #2e2e2e;
+}
+
+section#skill h2{
+    position: relative;
+    left: -30px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-shadow: 2px 2px rgb(7, 6, 8);
 }
 
 section#contact{
